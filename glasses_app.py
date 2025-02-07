@@ -1,5 +1,5 @@
 import streamlit as st
-import cv
+import cv2
 import av
 import numpy as np
 import mediapipe as mp
@@ -50,4 +50,3 @@ st.write("افتح الكاميرا وشوف إذا كنت لابس نظارة �
 
 # تشغيل الكاميرا
 webrtc_streamer(key="camera", video_transformer_factory=GlassesDetector)
-
